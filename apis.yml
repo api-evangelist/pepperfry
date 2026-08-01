@@ -1,8 +1,27 @@
 aid: pepperfry
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/pepperfry.png
 name: Pepperfry
-description: 'Pepperfry is a company surfaced as a portfolio company of norwest-venture-partners and added
-  to the API Evangelist network as a stub for enrichment. Sector: unknown. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Pepperfry is an Indian online marketplace for furniture and home products,
+  founded in 2011 and headquartered in Mumbai. It sells furniture, decor, lamps, kitchen
+  and dining goods, furnishings, and modular home solutions to consumers across India
+  through its website, mobile apps, and a network of physical studio showrooms. It was
+  added to the API Evangelist network as a portfolio company of Norwest Venture Partners.
+  An enrichment pass on 2026-07-20 found no public developer portal, API documentation,
+  OpenAPI/GraphQL specification, SDKs, or /.well-known discovery surface: the consumer
+  site is fully bot-protected (HTTP 403) and there is no evidence of an externally
+  documented API program. The one artifact captured is a live domain-security probe of
+  pepperfry.com.'
 url: https://raw.githubusercontent.com/api-evangelist/pepperfry/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +31,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
-- Unknown
+- E-commerce
+- Furniture
+- Home
+- Retail
+- Marketplace
+- India
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +47,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/pepperfry-domain-security.yml
 - type: Website
   url: https://pepperfry.com
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
